@@ -1,0 +1,57 @@
+---
+title: "APEC8003: Recitation 1"
+author: 
+  - "Shunkei Kakimoto" 
+header-includes:
+   - \usepackage{mathtools}
+   - \usepackage{color}
+   - \usepackage{amsmath}
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: ../xaringan-themer.css 
+    lib_dir: libs
+    nature: 
+      highlightStyle: github
+      highlightLines: true
+---
+class: middle
+
+```{r, child = '../setup.rmd', cache = FALSE}
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+```{r, include = F, cache = FALSE}
+library(data.table)
+library(ggplot2)
+library(dplyr)
+library(gganimate)
+library(gifski)
+library(gganimate)
+# library(learnr)
+```
+
+```{r, include = F, eval=F, cache = FALSE}
+httpgd::hgd()
+httpgd::hgd_browse()
+```
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+```
+
+
+.content-box-green[**A Useful tip:**]
+
+hitting letter "o" key will give you a panel view of the slides
+
+---
+class: middle
+
+# Outline
+1. 
+
+---
