@@ -44,14 +44,244 @@ xaringanExtra::use_tachyons()
 ```
 
 
-.content-box-green[**A Useful tip:**]
+<!-- .content-box-green[**A Useful tip:**]
 
-hitting letter "o" key will give you a panel view of the slides
+hitting letter "o" key will give you a panel view of the slides -->
+
+<!-- ---
+class: middle -->
+
+# Communications
+
++ Assignment
+  * Five assignments in total
+  * Submit your work on Canvas by Tue 3:00 pm
+ 
++ My office hour
+  * at Waite Library
+  * Thursday 2 - 2:50 pm
+  * Friday 2 - 2:50 pm (need to be changed)
+  * Or feel free to shoot me an email to set up a time for meeting (Zoom or in person)
+
+???
++ I found that my office hours on Friday overlap with the econometric recitation class (?)
++ 
+
 
 ---
 class: middle
 
 # Outline
-1. 
+
+1. Dominant strategy equilibrium and Iterated strict dominance (Lecture note 2, p 13 - 16) (10 mins)
+2. Exercise problem 1 (20 mins)
+3. Exercise problem 2 (20 mins)
 
 ---
+
+class: middle
+
+#  Dominant Strategy Equilibrium
+<!-- .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
+
+**Nash equilibrium**
+
+At an equilibrium, each player's strategy is a best response to the others (or no player has a profitable deviation).
+]  -->
+
+
+Other than Nash equilibrium, there is another type of equilibrium called **dominant strategy equilibrium**, which can be used to make predictions about games. 
+
+???
++ We learned about NE. NE is great in that it is widely applicable and used to make predictions about games. But there is another way of deriving predictions about the game using another equilibrium concept, called dominant strategy equilibrium. 
+  + although its 
+
+---
+class: middle
+
+# Definition
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
+
+1. <b>Dominant strategy</b>: for $s_i, t_i \in S_i$, 
+
+(i) $s_i$ **weakly dominates** $t_i$ if $U_i(s_i, s_{\sim i}) \color{blue}{\ge} U_i(t_i, s_{\sim i})$ for all $s_{\sim i} \in S_{\sim i}$.
+
+(ii) $s_i$ **dominates** $t_i$ if $U_i(s_i, s_{\sim i}) \color{blue}{\ge} U_i(t_i, s_{\sim i})$ for all $s_{\sim i} \in S_{\sim i}$ and $U_i(s_i, s_{\sim i}) \color{red}{>} U_i(t_i, s_{\sim i})$ for some $s_{\sim i} \in S_{\sim i}$.
+
+(iii) $s_i$ **strictly dominates** $t_i$ if $U_i(s_i, s_{\sim i})\color{red}{>} U_i(t_i, s_{\sim i})$ for all $s_{\sim i} \in S_{\sim i}$.
+]
+
+---
+class: middle
+
+# Definition
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
+
+1.<b>Dominant strategy</b>: for $s_i, t_i \in S_i$, 
+
+(i) $s_i$ **weakly dominates** $t_i$ if $U_i(s_i, s_{\sim i}) \color{blue}{\ge} U_i(t_i, s_{\sim i})$ for all $s_{\sim i} \in S_{\sim i}$.
+
+(ii) $s_i$ **dominates** $t_i$ if $U_i(s_i, s_{\sim i}) \color{blue}{\ge} U_i(t_i, s_{\sim i})$ for all $s_{\sim i} \in S_{\sim i}$ and $U_i(s_i, s_{\sim i}) \color{red}{>} U_i(t_i, s_{\sim i})$ for some $s_{\sim i} \in S_{\sim i}$.
+
+(iii) $s_i$ **strictly dominates** $t_i$ if $U_i(s_i, s_{\sim i})\color{red}{>} U_i(t_i, s_{\sim i})$ for all $s_{\sim i} \in S_{\sim i}$.
+]
+
+<br>
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
+
+2.<b>Dominant strategy equilibrium</b>: 
+
+$s \in S$ is a (weekly/strictly) **dominant strategy equilibrium** if for all $i \in N$, and all $t_i \in S_i$, $s_i$ (weekly/strictly) dominates $t_i$. 
+]
+
+---
+class: middle
+
+## Example: Prisoner's Dilemma
+
+```{r  echo = F, out.width = "80%"}
+knitr::include_graphics("photos/photo1.png")
+```
+
+.content-box-green[**Question**]
+
+Can you find any (weekly/strictly) dominant strategy for each player?
+
+---
+class: middle
+
+.content-box-green[**Nash equilibrium vs Dominant equilibrium**]
+
++ For a dominant equilibrium, each player only cares about their optimal strategies and don't care what the opponent's best strategy is. 
++ For a Nash equilibrium, each player needs to predict about what the opponent's optimal strategy is. 
+
+<br>
+
+.content-box-green[**NOTE**]
+
+In many games, however, one or more players do not have dominant strategies. In that case, we cannot derive an equilibrium using the dominant strategies approach...
+
+???
++ let's say, there are two players and only one player has a dominant strategy. Then, we cannot derive any equilibrium.
++ Is there any way to solve the game using the information about one player's dominant strategy?
++ Yes, there is. There is a process called iterated strict dominance. 
+
+
++ All dominant strategy equilibria are Nash equilibria, the reverse is not true.
+  + This is intuitive as some games cannot be solved with dominant strategies approach.  
+
+---
+class: middle
+
+# Iterated Strict Dominance
+
+.content-box-green[**Idea:**]
+
+A rational player always plays the dominant strategy (if exists) no matter what the opponents might do. 
+
+???
++ Iterated strict dominance is a refinement of the dominant strategies approach which we saw in the previous slides. 
++ The idea behind this concept is that a rational player always plays the dominant strategy (if exists) no matter what the opponents might do. 
+
+---
+class: middle
+
+# Iterated Strict Dominance
+
+.content-box-green[**Idea:**]
+
+A rational player always plays the dominant strategy (if exists) no matter what the opponents might do. 
+
+In other words, <span style="color:blue">No rational player should ever play a strictly dominated strategy.</span> 
+
+<br>
+
+&rarr; This idea leads to another solution concept for a game called **iterated strict dominance** or **iterated elimination of strictly dominated strategies**. 
+
+???
++ In other words, no rational player do not play a strictly dominated strategy.
++ Using this idea, we can derived an equilibrium. This solution concept is called iterated strict dominance. 
+
++ Let's see an example. 
+
+---
+class: middle
+## Example 
+
+This is the game you did as an in-class game in this Wednesday. 
+
+```{r  echo = F, out.width = "120%"}
+knitr::include_graphics("photos/photo2_1.png")
+```
+
+.content-box-green[**Question**]
+
+Can you find any (weekly/strictly) dominant strategy for each player?
+
+<span style="color:blue">No.</span>
+
+???
++ There are no strictly dominant strategies in this game.
+
+---
+class: middle
+
+```{r  echo = F, out.width = "120%"}
+knitr::include_graphics("photos/photo2_1.png")
+```
+For player 1, 
+For player 2, C is strictly dominated by R. 
+
+---
+class: middle
+
+Gibbsons P.7-8
+
+> Nash equilibrium is a stronger solution concept than iterated elimination of strictly dominated strategies, in the sense that the player' strategies in a Nash equilibrium always survive iterated elimination of strictly dominated strategies, but the converse is not true. 
+
+---
+class: middle
+
+# Example Problem 1 (Discrete strategies):
+
+Bob and Ray are driving in opposite directions down a road that narrows down to a single lane to cross a river.  Each player can either maintain speed (M) or slow down (S). Players choose their strategy simultaneously one time (static game of complete information). If both players maintain speed they will crash on the bridge and each get a payoff of -8.  If one player maintains speed and the other slows down the player maintaining speed gets a payoff of 3 while the other player gets a payoff of 0.  If both players slow down, they each get a payoff of 1.  
+
+(1) Write down the strategy set of each player.
+
+(2) Write down the normal form for this game.
+
+(3) Find **all** Nash equilibria for this game. 
+
+???
++ There are three points to understand the game , which are (i) the players in the game, (ii) strategy available to each player, and (iii) the payoffs received by each player.
+  + the normal-form representation of a game summaries these points. 
+  + normal-form representation can be mainly used for static game, but it can be also used for sequential-move games (but in that case, the extensive-form representation of the game is more convenient framework for analyzing dynamic issues.)
++ Once you understand the game, the rest of the process is mechanical (always the same pattern).
+
+---
+class: middle
+
+# Example Problem 2 (Continuous strategies):
+
+Two players are deciding how to split \$1. They simultaneously put in a bid for how much of the dollar they will receive, $s_i$, $i = 1, 2$.  If the sum of the bids is less than or equal to \$1 then each player receives their bid. If the sum of the bids is more than $1 then both players receive a payoff of 0. 
+
+(1) Write down the payoff function for each player as a function of strategies.
+
+(2) Find the best response function for each player.
+
+(3) Find all pure strategy Nash equilibria for this game.  
+
+
+
+
+
+
+
+
+
+
+
+
