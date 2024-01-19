@@ -95,7 +95,7 @@ class: middle
 
 class: middle
 
-#  Dominant Strategy Equilibrium
+# Dominant Strategy Equilibrium
 <!-- .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
 
 **Nash equilibrium**
@@ -170,11 +170,11 @@ knitr::include_graphics("photos/photo1.png")
 
 .content-box-green[**Question**]
 
-Can you find any (weekly/strictly) dominant strategy for each player? If so, is there any dominant equilibrium?
+Is there any (weekly/strictly) dominant strategy for each player? Can you find a dominant equilibrium?
 
 ???
 + Let's see these concepts with an example of Prisoner's Dilemma.
-+ Can you find any dominant strategy for each player? Let's do this together. Can you fid 
++ Can you find a dominant strategy for each player? Let's do this together. Can you fid 
 + Let's start with player 1. When player 2 plays "Cooperate",  Player 1 should play defect. When player 2 plays "Defect", Player 1 should plays Defect. Therefore, "Defect" is the strictly dominant strategy for player 1. 
 + In the same way, we can see that "Defect" is the strictly dominant strategy for player 2. 
 + Therefore, (Defect, Defect) is a strictly dominant strategy equilibrium. 
@@ -182,7 +182,7 @@ Can you find any (weekly/strictly) dominant strategy for each player? If so, is 
 ---
 class: middle
 
-.content-box-green[**Nash equilibrium vs Dominant equilibrium**]
+.content-box-green[**Nash equilibrium v.s. Dominant equilibrium**]
 
 + For a Nash equilibrium, each player needs to predict what the opponent's optimal strategy is. 
 + For a dominant equilibrium, each player only cares about their optimal strategies and doesn't care what the opponent's best strategy is. 
@@ -240,7 +240,7 @@ Repeat to eliminate strictly dominated strategies.
 
 ---
 class: middle
-## Example 
+## Example
 
 This is the game you did in the class this Wednesday. 
 
@@ -250,13 +250,13 @@ knitr::include_graphics("photos/photo2_1.png")
 
 .content-box-green[**Question**]
 
-+ Can you find a strictly dominant strategy for each player? (Recall that strictly dominant strategy is the best strategy no matter what the opponent may play.)
++ Is there any strictly dominant strategy for each player? (Recall that strictly dominant strategy is the best strategy no matter what the opponent may play.)
 
-+ Can you find a strictly dominated strategy?
++ Is there any <span style="color:blue">strictly dominated strategy</span>?
 
 ---
 class: middle
-## Example 
+## Example
 
 This is the game you did as an in-class game in this Wednesday. 
 
@@ -266,11 +266,11 @@ knitr::include_graphics("photos/photo2_1.png")
 
 .content-box-green[**Question**]
 
-+ Can you find any strictly dominant strategy for each player? (Recall that strictly dominant strategies is the best strategy no matter what the opponent may play.)
++ Is there any strictly dominant strategy for each player? (Recall that strictly dominant strategies is the best strategy no matter what the opponent may play.)
 
 <span style="color:blue">No.</span>
 
-+ Can you find any <span style="color:blue">strictly dominated strategy</span>?
++ Is there any <span style="color:blue">strictly dominated strategy</span>?
 
 <span style="color:blue">Yes!</span>
 
@@ -310,7 +310,7 @@ knitr::include_graphics("photos/photo2_2.png")
 
 .content-box-green[**Question**]
 
-Can you find any strictly dominated strategy?
+Is there any strictly dominated strategy?
 
 ???
 + After eliminated player 2's strategy $C$, now the game looks like this. 
@@ -363,7 +363,7 @@ If there are no strictly dominated strategies to be eliminated (i.e. all the str
 ---
 class: middle
 
-.content-box-green[**Nash equilibrium vs Iterated strict dominance**]
+.content-box-green[**Nash equilibrium v.s. Iterated strict dominance**]
 
 Gibbsons P.7-8
 
@@ -396,7 +396,7 @@ class: middle
 
 # Example Problem 2 (Continuous strategies):
 
-Two players are deciding how to split \$1. They simultaneously put in a bid for how much of the dollar they will receive, $s_i$, $i = 1, 2$.  If the sum of the bids is less than or equal to \$1 then each player receives their bid. If the sum of the bids is more than $1 then both players receive a payoff of 0. 
+Two players are deciding how to split $1. They simultaneously put in a bid for how much of the dollar they will receive, $s_i$, $i = 1, 2$.  If the sum of the bids is less than or equal to $1 then each player receives their bid. If the sum of the bids is more than $1 then both players receive a payoff of 0. 
 
 (1) Write down the payoff function for each player as a function of strategies.
 
