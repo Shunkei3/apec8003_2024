@@ -30,3 +30,23 @@
 
 + Why mixed strategy happens?
 
+
+# Recitation 2
+
+## Plan
++ Imperfect competition models: monopoly and oligopoly
+
+### Monopoly's strategy to gain more profits
++ Perfect price discrimination
++ Two-part tariffs
++ Multi-market price dscrimination
+
+### Oligopoly
++ Simultaneous move:
+	+ Bertrand (set price)
+	+ Cournot (set quantities)
++ Sequential move:
+	+ Stackelberg
++ Product differentiation: Hotelling Model of Spatial Competition
+
+

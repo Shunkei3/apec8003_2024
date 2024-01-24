@@ -1,0 +1,82 @@
+---
+title: "APEC8003: Recitation 2"
+author: 
+  - "Shunkei Kakimoto" 
+header-includes:
+   - \usepackage{mathtools}
+   - \usepackage{color}
+   - \usepackage{amsmath}
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: ../xaringan-themer.css 
+    lib_dir: libs
+    nature: 
+      highlightStyle: github
+      highlightLines: true
+---
+class: middle
+
+```{r, child = '../setup.rmd', cache = FALSE}
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+```{r, include = F, cache = FALSE}
+library(data.table)
+library(ggplot2)
+library(dplyr)
+library(gganimate)
+library(gifski)
+library(gganimate)
+# library(learnr)
+```
+
+```{r, include = F, eval=F, cache = FALSE}
+httpgd::hgd()
+httpgd::hgd_browse()
+```
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+```
+
+# Outline
+
+1. Dominant strategy equilibrium and Iterated strict dominance (Lecture note 2, p 13 - 16) (10 mins)
+2. Exercise problem 1 (20 mins)
+3. Exercise problem 2 (20 mins)
+
+???
++ This is the outline for today's session. 
++ In this week's assignment, There are questions related to Dominant strategy equilibrium and Iterated strict dominance, which we didn't cover in this week lectures'. So, I'm gonna explain about these concepts. 
++ And, I prepared some exercise problems, which might be helpful for this week's assignment. So, let's do it. 
+
+---
+
+# Quick Review
+
+Last week, we leaned, 
+
+Monopoly can capture more profit by 
+
++ Perfect price discrimination
++ Two-part tariffs 
++ Multi-market price discrimination
+
+Oligopoly
+
++ Cournot (each firm chooses quantity)
++ Bertrand competition (each firm chooses price)
++ 
+
++ Cournot 
+
+---
+
+# Exercise Problem 1
+
+
+
