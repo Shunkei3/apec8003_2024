@@ -33,6 +33,34 @@
 
 # Recitation 2
 
+# Lecture 1/23
++ Monopoly
++ Ologopoly
+	+ Bertrand
+	+ Cournot
+
+# Lecture 1/25
++ Solutions to the Bertrand paradox:
+	+ 1. increasing marginal cost
+		+ Edgeworth problem 
+	+ 2. Product differenciation
+		+ Hotelling model of spatial competition
+	+ 3. Repeated play
+
++ Dynamic games of complete infromation
+	+ normal form vs extensive form
+		+ note that at a play in an extensive form, sometimes we use normal form
+	+ Subgame perfect Nash Equilibirium
+		+ NE in all subgames
+		+ *You should explain how to write out subgame perfect NE*
+
+# Lecture 1/26
++ Stackelberg: 
+	+ The essense is that if one frim produce more, then the price decreases, therefor firim 2 end up producing less, and less profit.
+
++ Two-stage games:
+	+ 
+
 ## Plan
 + Imperfect competition models: monopoly and oligopoly
 
