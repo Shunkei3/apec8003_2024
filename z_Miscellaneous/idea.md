@@ -78,3 +78,34 @@
 + Product differentiation: Hotelling Model of Spatial Competition
 
 
+
+# Lecture 2/8: Incomplete information
++ Inperfect information (asymmetric information)
+
+
+## Cournot Duopoly with assymetric informationabout cost
+
+### Setting:
+	+ Firm 1 does not know about the cost structure about firm 2
+		+ Firm 1 only knows the probability of firm2's type
+	+ Firm 2 has a private information:
+		+ high (or low) cost firm with probability 0.5, repectively
+
+### Solution:
+	+ Firm 1 maximizes expect profit
+	+ Firm 2 maximizes profit since they know their type
+
+
+
+## Bayesian NE for static incomplete information
++ keep up the probabilities
++ types: t_i 
+
+## Public goods with asymmetric infomration game:
++ cut-off strategy
+	+ Maybe it is useful to explain the logic of the cut-off stragegy.
+
+
+
+
+

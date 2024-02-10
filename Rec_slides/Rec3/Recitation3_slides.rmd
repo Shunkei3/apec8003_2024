@@ -1,5 +1,5 @@
 ---
-title: "APEC8003: Recitation 2"
+title: "APEC8003: Recitation 3"
 author: 
   - "Shunkei Kakimoto" 
 header-includes:
@@ -43,71 +43,68 @@ httpgd::hgd_browse()
 xaringanExtra::use_tachyons()
 ```
 
-# Quick review
+# Big picture
 
-.content-box-green[**Dynamic game**]
+.content-box-green[**Assignment 1**]:
++ Romeo and Juliet, Battle of Sexes
++ Iterated strict dominance
+  + If strategy A is dominated by strategy B for player 1, then there is no mixed strategy by player 2 that will make player 1 put any positive probability on playing B.
++ Public goods game
 
-Players  move sequentially or repeatedly. 
-
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[ 
-
-<b>Subgame Perfect Nash Equilibrium</b>
-
-Definition: A set of strategies is a subgame Nash equilibrium if it is a Nash equilibirium in all subgames.
-]
+.content-box-green[**Assignment 2:**]
++ Monopolist, Two-part tariff
++ Edgeworth cycle
++ Cournot, Bertrand, and cartel outcome
++ Hotelling model of spatial competition
++ Strategic Commitment in Two-Stage Games
++ Infinitely repeated games: trigger strategy
++ Tariffs and imperfect international competition
 
 ???
-+ Okay, last week, we covered dynamic game. 
-+ What is a dynamic game? Well, it is a game such tht players move sequentially or repeatedly. 
-+ We can find NE, but not all the predictions of NE is credible. Some NE are non credible threats. 
-+ So, as a refinment of conventinal NE, we use new equilibirumm concept called subgame Nash equilibrium. Okay?
++ Sometimes, stepping back and looking at the big picture of what we've learned so far can be helpful for you to improve your understanding.
+
++ This is a list of topics of the assignment problems that we have done. 
++ If you feel like you don't have **confidence in** some of these topics, I recommend that you go back and think about why you don't understand at first, and review the correspoding part in the lecture note, solve the problem again.  
 
 ---
 class: middle
 
-# Exercise Problem 1 (Midterm 2020)
+# Problem 3, Midterm Spring 2023
 
-Consider the extensive form game in Figure 1.  The first payoff in parentheses is player 1’s, while the second is player 2’s.  
+## Practice for Two-part tariff
 
-(a).  Write down the strategies for each player.
+The Mega-Meta Corporation is a monopolist in the production of game theory software. There are $N$ consumers of this software, $i = 1, 2, ..., N$. Each consumer $i$ has an inverse demand curve: $P_i (Q_i )=a-Q_i$, where $P_i$ is the price to consumer $i$, and $Q_i$ is quantity sold to consumer $i$. Assume there is a fixed cost, $F$, to develop the software, but no cost for distributing the software (zero marginal cost). The cost function for Mega-Meta is: $C(Q)=F$, where $Q=\sum_{i=1}^N Q_i$  (note: $C$ does not depend on $Q$ because marginal cost is zero). 
 
-(b).  Find all Nash equilibria for the subgame starting with player 2 after player 1 has chosen $R$. 
+<b>a.</b> Suppose Mega-Meta chooses a quantity to sell to consumer $i$. What is the profit maximizing quantity to sell to consumer $i$. How much profit does Mega-Meta make over all $N$ consumers?
+  
+<b>b.</b> Now suppose that Mega-Meta charges a two-part tariff for each consumer: $T_i (Q_i )=x+yQ_i$, where $x$ is a fixed fee ("gate fee") and $y$ is a price per unit. What is the profit maximizing two-part tariff to charge each consumer? How much profit does Mega-Meta make over all $N$ consumers?
 
-(c).  Write down the normal form version of this game.
+<br>
 
-(d).  What are the pure strategy Nash equilibria for the complete game?
-
-**(e)**.  What are the pure strategy subgame perfect Nash equilibria for the complete game?
-
-```{r  echo = F, out.width = "50%"}
-knitr::include_graphics("photos/pr1.png")
-```
+<div style="text-align: right"> (Continue to the next page) </div>
 
 ???
-+ ???
-+ I solved problems in midterm and final exams many times in preparing for the prelim, and actually it helped me a lot.
-+ The problems I brought today are one of my favorite problems from the past exams, actually when you start to solve past prelim exams, you will see similar problems.  
++ Okay, this is the problem that we gonna work on today. 
++ Last year, we had three problems on the midterm, and this problem was the final problem. I remembered that I got a bit confused in last part of this problem. I think this is a good problem to practice dynamic game, so let's do it. 
++ First, read the problem, and think about the first two questiones. 
+  + The first question is easy, it's just asking about the monopoly profit. 
+  + The second question is asking about Two-part tarrifs. 
 
-+ I like this problem because you can practice both static and dynamic game of complete information at the same time. 
-  + As you can see from this game tree, this part is dynamic game, but this part is static game. Interesting!
-+ Also, the similar game looks like this has been on prelim multiple times.  
-
-+ The main thing that I want to make sure you know is how to write down a set of strategies for each player in a dynamic game. 
 
 ---
-class: middle
+class: middle 
 
-# Exercise Problem 2 (Midterm 2020)
+# Problem 3, Midterm Spring 2023 (continue)
 
-Three firms compete as Cournot oligopolists. Let $q_i$ be the quantity produced by firm $i$, $i = 1, 2, 3$. The market inverse demand curve is given by $P(Q)=30-Q$, where $P$ is market price and $Q$ is quantity, with $Q=\sum_{i=1}^3 q_i$. Each firm has a cost function given by: $C(q_i)=6q_i$. 
+<b>c.</b> Finally suppose that Mega-Meta faces potential competition from Twenty-Cent Inc. Assume that Mega-Meta moves first and chooses a quantity to produce for each consumer $(Q_{i1})$. Next, Twenty-Cent decides whether or not to enter. If it enters, it pays a fixed cost of $F$, and then it chooses a quantity to sell to each consumer $(Q_{i2})$. If it doesn’t enter, then Twenty-Cent earns a $0$ payoff and Mega-Meta remains a monopolist. 
 
-(a). Solve for the Cournot equilibrium. Solve for the profit made by each firm in Cournot equilibrium.
+(i) Suppose that Mega-Meta anticipates entry and produces as a Stackelberg leader and Twenty-Cent plays as a Stackelberg follower. What is the Stackelberg equilibrium?
 
-(b). Suppose the firms collude to maximize joint profits and share profit equally by each producing $1/3$ of the monopoly output. How much does each firm produce? What is the profit of each firm?
+(ii) How much would Mega-Meta need to sell to each consumer in order to convince Twenty-Cent not to enter? 
 
-(c). Suppose the three firms compete in an infinitely repeated game. Suppose that $\delta$ is the discount factor between each stage of the repeated game. For what values of $\delta$ is it possible to support the collusive outcome as a subgame perfect Nash equilibrium of the infinitely repeated game?
+(iii) Suppose that a = 12, N = 100 , and F = 400. What is the subgame perfect equilibrium in this case? 
 
-???
-+ For part (c), such a strategy is called "trigger strategy".
+
+
+
 
