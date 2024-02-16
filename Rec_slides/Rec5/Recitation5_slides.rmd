@@ -1,0 +1,180 @@
+---
+title: "APEC8003: Recitation 5"
+author: 
+  - "Shunkei Kakimoto" 
+header-includes:
+   - \usepackage{mathtools}
+   - \usepackage{color}
+   - \usepackage{amsmath}
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: ../xaringan-themer.css 
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+---
+class: middle
+
+```{r, child = '../setup.rmd', cache = FALSE}
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+```{r, include = F, cache = FALSE}
+library(data.table)
+library(ggplot2)
+library(dplyr)
+library(gganimate)
+library(gifski)
+library(gganimate)
+# library(learnr)
+```
+
+```{r, include = F, eval=F, cache = FALSE}
+httpgd::hgd()
+httpgd::hgd_browse()
+```
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+```
+
+
+# Outline
+
+---
+class: middle
+
+# Static games of Incomelete Information
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[ 
+<b>Baysian Nash Equilibrium</b>
+
+Definition: .
+]
+
+???
++ The core idea is the same as NE in the perfect competition. That is, each players plays their best response to the other players strategies.
++ The only complecation is that now, we need to maximize the 
+
+---
+class: middle
+
+# Static games of Incomelete Information
+
+## List of topics
+
++ Cournot Duopoly with asymmetric information about Cost
++ Provision of a Public Goods (free-rider problem)
+    + cut-off strategy
++ First price sealed-bid auction with two bidders
++ Double auction
+    + Sigle price equilibirium
+    + Linear strategy equilibrium
+
+---
+class: middle
+
+# Dynamic game of incomplete information
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[ 
+<b>Pure strategy perfect Bayesian equilibria (PBE)</b>
+
+Definition: A set of strategies is a subgame Nash equilibrium if it is a Nash equilibirium in all subgames.
+
+is a strategy combination $S=(s_1, s_2, ..., s_n)$ and a set of believes $p$ such that at every information set
+
+(i) $i \in N$ the strategy for the 
+
+
+]
+
+
+???
++ Okay, 
+
+---
+class: middle
+
+# Where are we?
+
+```{r  echo = F, out.width = "100%"}
+knitr::include_graphics("photos/game_types.png")
+``` 
+
+Perfect Bayesian NE is a refinement of 
+
+---
+class: middle
+
+# Overview: Signaling game
+
+.content-box-green[**Logic**]
+
+step 1: 
++ What's the Player 1's strategy?: 
+  + Separating or pooling strategy 
+
+step 2: 
++ What believes are consistent with Player 1's strategy.
+
+Given those beliefs, what's the player 2's best response?
+
+step 3: 
+Given player 2's strategy, think about the player 1's strategy. 
+
+Is it consisistent with Player 1's strategy we set in step 1? If not, there is no PBNE as such. 
+
+---
+
+class: middle
+
+# Spring 2023 Finall Problem 1
+
+Consider the following signaling game shown in the figure below, where player 1 can be of two types and chooses to play $L$ or $R$. Player 2 initially does not know whether player 1 is of type $t1$ or type $t2$, only the initial probabilities. Player 2 observes the choice of L or R and may update probabilities of types based on the choice by player 1. Player 2 then chooses $U$ or $D$. 
+
+```{r  echo = F, out.width = "60%"}
+knitr::include_graphics("photos/ex1.png")
+``` 
+
+a.  Find all pure strategy perfect Bayesian equilibria for this game.
+
+<br>
+
+Problem 1 has three questions. Next week, we will work on the question (b) and (c). Question (b) is related to the intuitive criterion. 
+
+---
+class: middle
+
+step 0: Write out the player 1's and player 2's possible strategies, repsectively.
+
+
+---
+class: middle
+
+Player 1's strategy: 
+
+(s_1^{t_1}, s_1^{t_2}) = {(U, L)}
+
+
+---
+class: middle
+
+If you want to practice more, see:
+
++ 
+
+
+
+
+
+
+
+
+
+
+
