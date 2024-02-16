@@ -8,6 +8,7 @@ header-includes:
    - \usepackage{amsmath}
 output:
   xaringan::moon_reader:
+    seal: false
     self_contained: true
     css: ../xaringan-themer.css 
     lib_dir: libs
@@ -44,62 +45,6 @@ xaringanExtra::use_tachyons()
 ```
 
 
-# Outline
-
----
-class: middle
-
-# Static games of Incomelete Information
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[ 
-<b>Baysian Nash Equilibrium</b>
-
-Definition: .
-]
-
-???
-+ The core idea is the same as NE in the perfect competition. That is, each players plays their best response to the other players strategies.
-+ The only complecation is that now, we need to maximize the 
-
----
-class: middle
-
-# Static games of Incomelete Information
-
-## List of topics
-
-+ Cournot Duopoly with asymmetric information about Cost
-+ Provision of a Public Goods (free-rider problem)
-    + cut-off strategy
-+ First price sealed-bid auction with two bidders
-+ Double auction
-    + Sigle price equilibirium
-    + Linear strategy equilibrium
-
----
-class: middle
-
-# Dynamic game of incomplete information
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[ 
-<b>Pure strategy perfect Bayesian equilibria (PBE)</b>
-
-Definition: A set of strategies is a subgame Nash equilibrium if it is a Nash equilibirium in all subgames.
-
-is a strategy combination $S=(s_1, s_2, ..., s_n)$ and a set of believes $p$ such that at every information set
-
-(i) $i \in N$ the strategy for the 
-
-
-]
-
-
-???
-+ Okay, 
-
----
-class: middle
-
 # Where are we?
 
 ```{r  echo = F, out.width = "100%"}
@@ -113,21 +58,27 @@ class: middle
 
 # Overview: Signaling game
 
-.content-box-green[**Logic**]
+Players: a signal sender (e.g., employee) and a signal receiver (e.g., employer)
 
-step 1: 
-+ What's the Player 1's strategy?: 
-  + Separating or pooling strategy 
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
+**step 1** Assume the sender's strategy at equilibrium (i.e., separating or pooling equilibrium).
 
-step 2: 
-+ What believes are consistent with Player 1's strategy.
+**step 2** What's the receiver's beliefs about sender's type that are consistent with sender's strategy. Given that belief, what's the receiver's BR?
 
-Given those beliefs, what's the player 2's best response?
+**step 3** Given the receiver's BR, what's the sender's BR? Is it consistent with what we assumed for this equilibrium? (or can you find any profitable deviation for player 1 that what we assumed in step 1?)
 
-step 3: 
-Given player 2's strategy, think about the player 1's strategy. 
++ If it is consistent, it is a pure strategy PBE. 
++ If no, there is no pure strategy PBE as such.
 
-Is it consisistent with Player 1's strategy we set in step 1? If not, there is no PBNE as such. 
+**step 4** Check whether the PBE satisfies the intuitive criteria (not for today. We'll learn this in the next lecture). 
+]
+
+Repeat step 1 ~ step 4 for all possible player 1's strategies. 
+
+???
++ Well, as usual, to understand how to solve this kind of complicated problem, I think the best way is to understanding the mechanism or logic by solving the problem.
++ As you will see when you review the past final exam, the same type of the question is asked every year in Problem 1, and you don't want to spend lots of time in the first problem. 
++ So, let's practice how to 
 
 ---
 
@@ -145,31 +96,224 @@ a.  Find all pure strategy perfect Bayesian equilibria for this game.
 
 <br>
 
-Problem 1 has three questions. Next week, we will work on the question (b) and (c). Question (b) is related to the intuitive criterion. 
+Problem 1 has three questions. Next week, we will work on questions (b) and (c). Question (b) is related to the intuitive criterion. 
+
+???
++ Let me work through how to solve this problem. 
++ There four possible pure strategy NE, two for pooling equilibrium and two for separating equilibrium. 
++ To let I am going to explain one pooling equilibrium and one separating equilibrium. 
 
 ---
 class: middle
 
-step 0: Write out the player 1's and player 2's possible strategies, repsectively.
+# Set up
+
+I will use the following notations. 
+
+```{r  echo = F, out.width = "60%"}
+knitr::include_graphics("photos/setup.png")
+```
+
+Define:
+
+Player 2's belief: $p=Pr[t_1|L]$ and $q=Pr[t_1|R]$
+
+Player 1's strategy: $(s_1^{t1}, s_1^{t2})$, Player 2's strategy: $(s_2^{L}, s_2^{R})$
+
+Player 1's payoff: $(u_1^{t1}, u_1^{t2})$
+
+???
++ I will use the following notations. $p$ and $q$ are the player 2's belief (in terms of probability) about player 1's type given player 1's signal. For example, $p$ is the player 2's belief that player 1 is type 1 after observing player 1 plays L. 
+
+---
+class: middle
+
+step 0: Write out the possible strategies for player 1 (signal sender).
 
 
 ---
 class: middle
+
+
+step 0: Write out the player 1 (signal sender)'s possible strategies.
+
 
 Player 1's strategy: 
 
-(s_1^{t_1}, s_1^{t_2}) = {(U, L)}
-
+$$(s_1^{t_1}, s_1^{t_2}) = \{\underbrace{(L, R), (R, L)}_\text{Separating strategies}, \underbrace{(L, L), (R, R)}_\text{Pooling strategies}\}$$
 
 ---
 class: middle
 
-If you want to practice more, see:
+## Case I: Separating Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, R)$
 
-+ 
+Suppose that player 1 plays a separating strategy $(s_1^{t_1}, s_1^{t_2})=(L, R)$ at equilibrium. 
+
+```{r  echo = F, out.width = "80%"}
+knitr::include_graphics("photos/I_1.png")
+``` 
+
+<b>(step 1)</b> What should player 2's beliefs be? What is the player 2's BR to Player 1's strategy?
+
+Player 2's beliefs are $p=1$ and $q=0$. Given these briefs, player 2's BR is $(s_2^{L}, s_2^{R})=(D, D)$.
+
+
+???
++ Let's consider that Suppose that player 1 plays a separating strategy $(L, R)$. What the player 2's belief should be?
+
+---
+class: middle
+
+## Case I: Separating Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, R)$
+
+We found that player 2's BR is $(s_2^{L}, s_2^{R})=(D, D)$.
+
+```{r  echo = F, out.width = "80%"}
+knitr::include_graphics("photos/I_2.png")
+``` 
+
+---
+class: middle
+
+## Case I: Separating Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, R)$
+
+```{r  echo = F, out.width = "60%"}
+knitr::include_graphics("photos/I_3.png")
+``` 
+
+<b>(step 2)</b> Given player 2's BR, what is player 1's BR? Is it consistent with what we assumed for this equilibrium?
+
++ Player 1's BR is $(s_1^{t_1}, s_1^{t_2})=(L, L)$ (oops, Player 1 with type 2 would rather play $L$ than $R$!) 
+
+**Conclusion**: There is no separating equilibrium as such. 
+
+???
++ The next question is what is player 1's BR given player 2's BR. 
++ For player 1 with type 1, we compare player 1's payoff of 1 by playing L, and payoff of 0 obtained by playing R. Obviously, 
+
+---
+class: middle
+## Case II: Separating Equilibrium $(s_1^{t_1}, s_1^{t_2})=(R, L)$
+
+Let's practice. Find a pure strategy PBE for this case. 
+
+```{r  echo = F, out.width = "70%"}
+knitr::include_graphics("photos/I_4.png")
+``` 
+
+???
++ You should get $\{R,L; U, U; p=0, q=1\}$
+
+---
+
+## Memo:
 
 
 
+
+---
+
+class: middle
+
+## Case III: Pooling Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, L)$
+
+<b>Step 1</b> Suppose that player 1 plays a pooling strategy $(s_1^{t_1}, s_1^{t_2})=(L, L)$ at equilibrium. 
+
+```{r  echo = F, out.width = "70%"}
+knitr::include_graphics("photos/I_5.png")
+```
+
+<b>step 2</b> Player 2's beliefs are $p=0.5$ and $q \in [0,1]$. Given these briefs, what is Player 2's BR to Player 1's strategy?
+
+---
+class: middle
+
+## Case III: Pooling Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, L)$
+
+```{r  echo = F, out.width = "70%"}
+knitr::include_graphics("photos/I_6.png")
+```
+
+.content-box-green[If player 1 plays L]
+
+\begin{align*}
+\text{Player 2's expected payoffs} =
+    \begin{cases}
+0 \cdot 1/2 + 1 \cdot 1/2 = 1/2 &\quad \text{by playing U} \\
+2 \cdot 1/2 + 0 \cdot 1/2 = 1 &\quad \text{by playing D}
+  \end{cases}
+\end{align*}
+
+So, player 2's BR when player 1 plays L is $s_2^{L}=D$
+
+---
+class: middle
+
+## Case III: Pooling Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, L)$
+
+```{r  echo = F, out.width = "70%"}
+knitr::include_graphics("photos/I_7.png")
+```
+
+.content-box-green[If player 1 plays R]
+
+\begin{align*}
+\text{Player 2's expected payoffs} =
+    \begin{cases}
+2 \cdot q + 0 \cdot (1-q) = 2q &\quad \text{by playing U} \\
+0 \cdot q + 1 \cdot (1-q) = 1-q &\quad \text{by playing D}
+  \end{cases}
+\end{align*}
+
+So, 
+
+\begin{align*}
+\text{Player 2's BR correspondence} =
+    \begin{cases}
+    U  \quad & \text{ if } \, q > 1/3 \\
+    U \text{ or } D &\text{ if } \, q = 1/3 \\
+    D &\text{ if } \, q < 1/3
+  \end{cases}
+\end{align*}
+
+---
+class: middle
+
+## Case III: Pooling Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, L)$
+
+```{r  echo = F, out.width = "80%"}
+knitr::include_graphics("photos/I_8.png")
+```
+
+<b>Step 3</b> Given Player 2's BR, what is Player 1's BR? Any profitable deviation from what we assumed?
+
++ For type 1, playing $L$ yields payoff of $1$. <span style="color:blue">But, type 1 can get higher payoff of 3 by playing $R$ (if player 2's belief is $q > 1/3$). Playing $L$ is type 1's BR if $q \leq 1/3$</span>
+
++ Similarly, for type 2, playing $L$ is the BR if $q \leq 1/3$.
+
+**Conclusion**: Thus, PBE is  $\{L, L; D, D; p=0.5, q \leq 1/3 \}$
+
+---
+class: middle
+## Case IV: Pooling Equilibrium $(s_1^{t_1}, s_1^{t_2})=(R, R)$
+
+Let's practice. Find a pure strategy PBE for this case. 
+
+```{r  echo = F, out.width = "70%"}
+knitr::include_graphics("photos/I_9.png")
+``` 
+
+???
++ You should get $\{R,R; D, U; p\ge1/3, q=0.5\}$
+
+---
+
+## Memo:
+
+
+
+
+---
 
 
 
