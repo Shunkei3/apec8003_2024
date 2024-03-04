@@ -8,7 +8,6 @@ header-includes:
    - \usepackage{amsmath}
 output:
   xaringan::moon_reader:
-    seal: false
     self_contained: true
     css: ../xaringan-themer.css 
     lib_dir: libs
@@ -45,237 +44,324 @@ xaringanExtra::use_tachyons()
 ```
 
 
-# Outline
 
----
-class: middle
+# For the Final Exam
 
-# Static games of Incomelete Information
+**Static games of incomplete information**
 
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[ 
-<b>Baysian Nash Equilibrium</b>
-
-Definition: .
-]
-
-???
-+ The core idea is the same as NE in the perfect competition. That is, each players plays their best responses to the other players strategies.
-+ The only complecation is that now, we need to maximize the 
-
----
-class: middle
-
-# Static games of Incomelete Information
-
-## List of topics
-
-+ Cournot Duopoly with asymmetric information about Cost
-+ Provision of a Public Goods (free-rider problem)
-    + cut-off strategy
-+ First price sealed-bid auction with two bidders
++ Cournot duopoly with incomplete information about cost 
++ Cutoff strategies
+  + 2017, 2022 Final
++ First prices sealed-bid auction with two bidders
 + Double auction
-    + Sigle price equilibirium
-    + Linear strategy equilibrium
+  + Single price equilibrium
+  + Linear strategy equilibrium
+    + 2017 Final
 
----
-class: middle
+**Dynamic games of incomplete information**
 
-# Dynamic game of incomplete information
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[ 
-<b>Pure strategy perfect Bayesian equilibria (PBE)</b>
-
-Definition: A set of strategies is a subgame Nash equilibrium if it is a Nash equilibirium in all subgames.
-
-is a strategy combination $S=(s_1, s_2, ..., s_n)$ and a set of believes $p$ such that at every information set
-
-(i) $i \in N$ the strategy for the 
-
-
-]
-
-+ pure strategy PBE
-+ 
-
-
++ Signaling game (discrete strategies)
+  + Almost every year
++ Dynamic Cournot duopoly game 
+  + Practice with Problem 1-e with Assignment 3, 2023 and 2022 Final 
++ Job market signaling game (continuous strategies)
+  + 2020 and 2019 Final
 
 ???
-+ Okay, 
++ Let me explain what the problems in the final exam look like. 
++ The main topics in this last half of the game theory class are static game of incomplete information and dynamic game of incomplete information.
+
++ Today is the last recitation for game theory class. There are lots of problems that I want to 
+
++ One thing that you might want to practice is that Dynamic Cournot duopoly. Like the problem you did in Problem 1 in Assignment 3. Suppose that, only firm 1 knows the true state of the market demand, and you might be asked whether firm 1 should reveal the market information to firm 2 or not. 
++ Dynamic Cournot game involving separating and pooling strategies are complicated and bothersome. It takes lots of time and makes you mentally exhausted. 
++ So I recommend that at least you take a look at similar problems before the exam. 
 
 ---
 class: middle
 
-# Where are we?
+Suppose that player $i$ is a signal sender.
 
-```{r  echo = F, out.width = "100%"}
-knitr::include_graphics("photos/game_types.png")
-``` 
++ $a_i \in A_i$ is an action for player $i$
++ $t_i \in T_i$ denotes a type of player $i$
 
-Perfect Bayesian NE is a refinement of 
-
----
-class: middle
-
-# Overview: Signaling game
-
-Players: a signal sender (e.g., employee) and a signal receiver (e.g., employer)
+<br>
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
-**step 1** Assume the sender's strategy at equilibrium (i.e., separating or pooling equilibrium).
 
-**step 2** What's the receiver's beliefs about sender's type that are consistent with sender's strategy. Given that belief, what's the receiver's BR?
-
-**step 3** Given the receiver's BR, what's the sender's BR? Is it consistent with what we assumed for this equilibrium? (or can you find any profitable deviation for player 1 that what we assumed in step 1?)
-
-+ If it is consistent, it is a pure strategy PBE. 
-+ If no, there is no pure strategy PBE as such.
-
-**step 4** Check whether the PBE satisfies the intuitive criteria (not for today. We'll learn this in the next lecture). 
+**Intuitive Criterion**: If the information set following $a_i$ is off the equilibrium path and $a_i$ is equilibrium dominated for type $t_i$, then the Receiver's belief should place zero probability on type $t_i$ (i.e., $p(t_i|a_i)=0$) as long as $a_i$ is not equilibrium dominated for all types in $T$.
 ]
 
-Repeat step 1 ~ step 4 for all possible player 1's strategies. 
 
 ???
-+ Well, as usual, to understand how to solve this kind of complicated problem, I think the best way is to understanding the mechanism or logic by solving the problem.
-+ As you will see when you review the past final exam, the same type of the question is asked every year in Problem 1, and you don't want to spend lots of time in the first problem. 
-+ So, let's practice how to 
++ I remember that I was confused with this definition. 
+
++ What's is 
 
 ---
-
 class: middle
 
-# Spring 2023 Finall Problem 1
+Suppose that player $i$ is a signal sender.
+
++ $a_i \in A_i$ is an action for player $i$
++ $t_i \in T_i$ denotes a type of player $i$
+
+<br>
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
+**Intuitive Criterion**: If the information set following $a_i$ is off the equilibrium path and $a_i$ is equilibrium dominated for type $t_i$, then the Receiver's belief should place zero probability on type $t_i$ (i.e., $p(t_i|a_i)=0$) as long as $a_i$ is not equilibrium dominated for all types in $T$.
+]
+
+<br>
+
+Two requirements to apply the Intuitive Criterion:
+
+(1) The information set following $a_i$ is off the equilibrium path.
+
+(2) $a_i$ is equilibrium dominated for type $t_i$ but not not all types. 
+
+
+???
++ I remember that I was confused with this definition. 
++ What's is 
+
+---
+class: middle
+
+Just to make sure ...
+
+.content-box-green[**"off the equilibrium path"**]
+
+> For a given equilibrium in a given extensive-form game, an information set is <b>on the equilibrium path</b> if it will be reached with positive probability if the game is played according to the equilibrium strategies, and <u> is <b>off the equilibrium path</b> if it is certain not to be reached if the game is played according to the equilibrium strategies</u>. `r tufte::quote_footer('--- Gibbsons P178')`
+
+---
+class: middle
+
+## Example, Problem 4 in Assignment 4
+
+<br>
+
+```{r  echo = F, out.width = "70%"}
+knitr::include_graphics("./photos/example0.png")
+``` 
+
+You found that PBE are 
+
+(i) $\{(L, R), (DL, DR), p = 1, q = 0\}$
+
+(ii) $\{(L, L), (DL, UR), p = 1/2, q= 3/7\}$
+
+<br>
+
+.content-box-green[**Question**]
+
+Which of the PBE satisfy the Intuitive Criterion?
+
+---
+class: middle
+
+.content-box-green[Case (i) Separating equilibrium {(L, R), (DL, DR), p = 1, q = 0}]
+
+<br>
+
+```{r  echo = F, out.width = "70%"}
+knitr::include_graphics("./photos/example1.png")
+``` 
+
+<br>
+
+There is no off the equilibrium path. 
+
+&rarr; The Intuitive Criterion will not impose any restrictions on Player B (signal receiver)'s belief &rarr; The intuitive Criterion 
+
+???
++ Let's start with a separating equilibrium. Since, there is no equilibrium path, the intuitive criterion does not impose any restrictions on Player B's brief. 
++ The separating equilibrium automatically satisfies the Intuitive Criterion. 
+
+---
+class: middle
+
+.content-box-green[Case (ii) Pooling equilibrium {(L, L), (DL, UR), p = 1/2, q= 3/7}]
+
+<br>
+
+```{r  echo = F, out.width = "70%"}
+knitr::include_graphics("./photos/example2.png")
+``` 
+
+1. Is there any off the equilibrium path? &rarr; Yes. The information set following $R$ is off the equilibrium path. 
+
+2. Check whether $R$ is equilibrium dominated for type $t_i$ but not not all types. 
+
++ For type 1, $R$ is equilibrium dominated. 
++ For type 2, $R$ is not equilibrium dominated. 
+
+<span style="color:blue">Intuitive Criterion activates! 
+</span>
+
+&rarr; Player B must believe $q=P[t_1|R]=0$ &rarr; contradiction (because the pooling equilibrium says that $q= 3/7$) &rarr; Case (ii) equilibrium does not satisfy the Intuitive Criterion. 
+
+
+???
++ If the game is played according to the equilibrium strategies, the information set following $R$ is off the equilibrium path. 
+
+
+---
+class: middle
+
+# Exercise: Spring 2020 Final, Problem 1 (continued)
 
 Consider the following signaling game shown in the figure below, where player 1 can be of two types and chooses to play $L$ or $R$. Player 2 initially does not know whether player 1 is of type $t1$ or type $t2$, only the initial probabilities. Player 2 observes the choice of L or R and may update probabilities of types based on the choice by player 1. Player 2 then chooses $U$ or $D$. 
 
 ```{r  echo = F, out.width = "60%"}
-knitr::include_graphics("photos/ex1.png")
+knitr::include_graphics("./photos/excer0.png")
 ``` 
 
-a.  Find all pure strategy perfect Bayesian equilibria for this game.
-
-<br>
-
-Problem 1 has three questions. Next week, we will work on questions (b) and (c). Question (b) is related to the intuitive criterion. 
-
-???
-+ Let me work through how to solve this problem. 
-+ There four possible pure strategy NE, two for pooling equilibrium and two for separating equilibrium. 
-+ To let I am going to explain one pooling equilibrium and one separating equilibrium. 
-
----
-class: middle
-
-# Set up
-
-I will use the following notations. 
-
-```{r  echo = F, out.width = "60%"}
-knitr::include_graphics("photos/setup.png")
-```
-
-Define:
-
-Player 2's belief: $p=Pr[t_1|L]$ and $q=Pr[t_1|R]$
-
-Player 1's strategy: $(s_1^{t1}, s_1^{t2})$, Player 2's strategy: $(s_2^{L}, s_2^{R})$
-
-Player 1's payoff: $(u_1^{t1}, u_1^{t2})$
-
-???
-+ I will use the following notations. $p$ and $q$ are the player 2's belief (in terms of probability) about player 1's type given player 1's signal. For example, $p$ is the player 2's belief that player 1 is type 1 after observing player 1 plays L. 
-
----
-class: middle
-
-step 0: Write out the possible strategies for player 1 (signal sender).
+In the previous recitation, you found that the pure strategy PBE are (i) $\{R, L; U, U; p=0, q \leq 1 \}$, (ii) $\{L, L; D, D; p=0.5, q \leq 1/3 \}$, and (iii) $\{R, R; D, U; p \ge 1/3, q=0.5\}$.
 
 
----
-class: middle
-
-
-step 0: Write out the player 1 (signal sender)'s possible strategies.
-
-
-Player 1's strategy: 
-
-$$(s_1^{t_1}, s_1^{t_2}) = \{\underbrace{(L, R), (R, L)}_\text{Separating strategies}, \underbrace{(L, L), (R, R)}_\text{Pooling strategies}\}$$
-
----
-class: middle
-
-## Case I: Separating Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, R)$
-
-```{r  echo = F, out.width = "80%"}
-knitr::include_graphics("photos/I_1.png")
-``` 
-
-Suppose that player 1 plays a separating strategy $(s_1^{t_1}, s_1^{t_2})=(L, R)$ at equilibrium. 
-
-<b>(step 1)</b> What should player 2's beliefs be? What is the player 2's BR?
-
-Player 2's beliefs are $p=1$ and $q=0$. Given these briefs, player 2's BR is $(s_2^{L}, s_2^{R})=(D, D)$.
+<span style="color:blue">b. Which of the perfect Bayesian equilibria from part (a) satisfy the Intuitive Criterion? Justify your answer.</span>
 
 
 ???
-+ Let's consider that Suppose that player 1 plays a separating strategy $(L, R)$. What the player 2's belief should be?
++ Are you guys familiar with this game of trees?
++ Yes, this is the same problem from problem 4 of Assignment 4, and you guys already solved part (a). So, today we gonna do part (b). 
+
+
+
++ I noticed that the exact same problem is on this week's assignment, but one thing that I want to highlight is that this is a very basic problem in solving dynamic game of incomplete information, so I want you to practice this kind of problem many times until you are able to smoothly solve it without any hesitation or confusion. 
+
++ I listed similar problems somewhere in this slide deck. So, please practice them. Okay?
+
+---
+
+## Notes:
 
 ---
 class: middle
 
-## Case I: Separating Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, R)$
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
 
-We found that player 2's BR is $(s_2^{L}, s_2^{R})=(D, D)$.
+**Incentive Compatibility Constraint**: 
 
-```{r  echo = F, out.width = "80%"}
-knitr::include_graphics("photos/I_2.png")
-``` 
+An Equilibrium strategy must be a best response:
 
----
-class: middle
+If the equilibrium strategy for $t=H$ is $e_H$, then 
+$$w(e_H) - c(H, e_H) \ge w(e) - c(H, e) \quad \forall e \neq e_H$$
 
-## Case I: Separating Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, R)$
+If the equilibrium strategy for $t=L$ is $e_L$, then 
+$$w(e_L) - c(L, e_L) \ge w(e) - c(L, e) \quad \forall e \neq e_L$$
 
-```{r  echo = F, out.width = "60%"}
-knitr::include_graphics("photos/I_3.png")
-``` 
+]
 
-<b>(step 2)</b> Given player 2's BR, what is player 1's BR? Is it consistent with what we assumed for this equilibrium?
-
-+ Player 1's BR is $(s_1^{t_1}, s_1^{t_2})=(L, L)$ (oops, Player 1 with type 2 would rather play $L$ than $R$!) 
-
-&rarr; Conclusion: There is no separating equilibrium as such. 
+ This is the constraint to assure that there is no profitable deviation for each player from the equilibrium. 
 
 ???
-+ The next question is what is player 1's BR given player 2's BR. 
-+ For player 1 with type 1, we compare player 1's payoff of 1 by playing L, and payoff of 0 obtained by playing R. Obviously, 
++ Actually, we applied the incentive compatibility constraint to the signaling game we did. 
++ so, this is not a special thing. 
++ We use this to narrow down the potential equilibrium outcomes.
+
 
 ---
 class: middle
-## Case II: Separating Equilibrium $(s_1^{t_1}, s_1^{t_2})=(R, L)$
 
-Let's practice. Find a pure strategy PBE for this case. 
+## Spring 2019 Final, Problem 3 (continued)
 
-```{r  echo = F, out.width = "70%"}
-knitr::include_graphics("photos/I_4.png")
-``` 
+Suppose there are two types of workers, high productivity types $(t = H)$ and low productivity types $(t = L)$.  A worker knows her type but a firm that is seeking to hire a worker does not. The probability of a worker being high productivity is $p_H  = 2/3$ and the probability of a low productivity type $p_L= 1/3$. A worker chooses an education level, $e \ge 0$, which is observable to firms.  The cost of education for a high type worker is: $c(H,e)=e^2$. The cost of education for a low type worker is: $c(L,e)=1.5e^2$. After observing the education level, firms offer wage contracts w(e) that specifies wages as a function of education. Assume that the output of a high type worker is: $y(H,e)=6+3e$ and the output of a low type worker is: $y(L,e)=6$.  The payoff for worker is: $w – c(t, e)$.  The payoff for a firm is: $y(t, e) - w$ .  Assume that firms are competitive so that they pay workers a wage equal to expected productivity: $w(e)=p(H│e)y(H,e)+p(L│e)y(L│e)$, where $p(x|e)$ is the conditional probability of the type $x$ ($x = H$ or $L$) given observed level of education $e$.
 
-???
-+ You should get $\{R,L; U, U; p=0, q=1\}$
+<span style="color:blue">Solve for efficient level of education, separating and pooling PBE, refine using Intuitive Criterion.</span>
 
----
-
-## Memo:
-
-
-
-
----
-
+<!-- ---
 class: middle
 
-## Case III: Pooling Equilibrium $(s_1^{t_1}, s_1^{t_2})=(L, L)$
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
++ Two types of workers: $t=H$ with $p_H  = 2/3$;  $t=L$ with $p_L  = 1/3$
++ Cost of education: $c(H,e)=e^2; c(L,e)=1.5e^2$
++ Worker's productivity: $y(H,e)=6 + 3e$; $y(L,e)=6$
++ The payoff for a worker is $w - c(t,e) \quad \all t \in {H, L}$ 
++ The payoff for a firm is $y(t,e)-w$
++ Wage equation: $w(e)=p(H│e)y(H,e)+p(L│e)y(L,e)=p(H│e)(6 + 3e)+p(L│e)6$
+] -->
+
+<!-- ---
+class: middle
+
+## Pooling equilibrium: $(s_1^{H},s_1^{L})=(e_p, e_p)$
+
+<b> Then, firm's beliefs </b>: 
+
++ $P(H|e_p)=2/3$.
++ $P(H|e \neq e_p)$ is off the equilibrium path, so it can be anything. Assume $P(H|e \neq e_p)=0$ so that choice of $e \neq e_p$ is unattractive. 
+
+<b> Given these beliefs, what is the firm's BR? </b>
+
+According to the wage equation,
+\begin{align*}
+  \begin{cases}
+  \text{If observing } e=e_p \text{, pay} \, w(e_p)=6 +2e_p \\
+  \text{If observing } e \neq e_p \text{, pay} \, w(e\neq e_p)=6
+  \end{cases}
+\end{align*}
+
+---
+class: middle
+
+<b> Given the firm's BR, what is the worker's BR? (use Incentive Compatibility Constraint)</b>
+
+First, if the worker plays $e \neq e_p$, which $e$ would a rational worker choose? &rarr $e=0$
+
+For type $H$, it must be that 
+\begin{align*}
+&\quad \text{payoff from playing} e=e_p \ge \text{payoff from playing} e \neq e_p \\
+\iff&\quad w(e_p) - c(H,e_p) \ge w(e \neq e_p) - c(H, 0) \\
+\iff&\quad 6 +2e_p - e_p^2 \ge 6 - 0 \\
+\iff&\quad e_p \leq 2  
+\end{align*}
+
+
+For type $L$, it must be that 
+\begin{align*}
+&\quad \text{payoff from playing} e=e_p \ge \text{payoff from playing} e \neq e_p \\
+\iff&\quad w(e_p) - c(L,e_p) \ge w(e \neq e_p) - c(L, 0) \\
+\iff&\quad 6 +2e_p - 1.5e_p^2 \ge 6 - 0 \\
+\iff&\quad e_p \leq 4/3
+\end{align*}
+
+<b>Conclusion</b>: Pooling PBE is $\{e_p \in [0, 4/3];  w(e_p)=6 +2e_p, w(e\neq e_p)=6; P(H|e_p)=2/3, P(H|e \neq e_p)=0\}$.
+ -->
+
+
+<!-- % $$\begin{align*}
+% w(e) &= p(H│e)y(H,e)+ P(L|e \neq e_p) y(L, e) \\
+%   &= \begin{cases}
+%       2/3 \cdot (6 + 3 e_P) + 1/3 \cdot 6  = 6 +2e_P \text{if $e=e_H$} \\
+%       0 \cdot (6 + 3e) + 1 \cdot 6 = 6 &\quad \text{if e \neq e_H}
+%   \end{cases}
+% \end{align*}$$
+ -->
+
+
+<!-- ???
++ Next Thursday will be the final exam. 
++ I will make sure to solve this week's assignment by Monday, so come to my office hours on Monday if you have any questions 
++ Also, my office hour usually starts from 12pm but I'll be there from 11:30.  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
