@@ -51,23 +51,6 @@ xaringanExtra::use_tachyons()
 knitr::include_graphics("photos/game_types.png")
 ``` 
 
-???
-+ Okay, let's get started. We are about to finish week 5 of the first quater of the spring semester, and there are only two weeks left. 
-
-+ This week, we finished static game of incomplete infromation and we started to dive into the Dybamic games of incomlete information. 
-
-+ Depending on the types of game, we have different kinds of Nash Equilibrium. 
-
-+ But the fundamental characteristic of these equilibria is the same. 
-  + That is, "At equilibrium, each player's strategy is the best response to the other players' strategies."
-  + This is the key thing that you might want to always keep in your mind.  
-
-+ By the way, do you remember the meaning of incomplete infomration?
-  + incomplete infomration means players do not have full information about their opponents. 
-    + In the case of signiling game, a signal reciever has a private information about their types, and signal reciever does not have such an information. 
-
-+ What about perfect information?
-  + if not all information sets are single ton. Or, at least one player at some point in the game tree does not know where they are in the tree
 
 
 ---
@@ -93,23 +76,7 @@ Players: a signal sender (e.g., employee) and a signal receiver (e.g., employer)
 
 Repeat step 1 ~ step 4 for all possible player 1's strategies. 
 
-???
-+ Okay, today, I wanna talk about signaling game. 
-  + Do you guys remember what the game looks like? 
 
-+ I will try as much as possible to walk through the steps to solve the problem with my small brain. 
-
-+ Here, I summarised steps to solve the problem. 
-
-+ In signaling game, there are two players, a signal sender, and a singnal receiver. 
-  + First, the nature determies the type of the sender which is private infromation. Then, sender send a signal. Given tht signal, reciever determines their action. 
-
-
-+ The basic flow and logic are the follwings. 
-+ The first step is to pick a potential strategy for player 1, and assume it consists of PBE. 
-  + This part is not difficult. What we want to do for the rest of the step is to check whether the assumed palyer 1's strategy consists of PBE or not. 
-  
-+ In Step 2, we define player 2's belief about player 1's type, and given that belief, derive Player 2's BR. 
 
 + In step 3, 
 
@@ -146,9 +113,7 @@ a.  Find all pure strategy perfect Bayesian equilibria for this game.
 
 Problem 1 has three questions. Next week, we will work on questions (b) and (c). Question (b) is related to the intuitive criterion. 
 
-???
-+ Let's practive using the problem 1 from last year's exam. 
-+ This is a typical signaling game. Player 1 chooses either left or rigt. Player 2 can ovserve player 1's choice and take as a signal, and choose either upp or down. 
+
 
 ---
 class: middle
@@ -170,24 +135,14 @@ Player 1's strategy: $(s_1^{t1}, s_1^{t2})$, Player 2's strategy: $(s_2^{L}, s_2
 ???
 + I will use the following notations. $p$ and $q$ are the player 2's belief (in terms of probability) about player 1's type given player 1's signal. For example, $p$ is the player 2's belief that player 1 is type 1 after observing player 1 plays L. 
 
-???
-+ Before we start, let me define some math notations just for my convenience. 
 
-+ For player 2's beliefs, I'm gonna use $p$ to denote the probability that the player 1's type is 1 after seeing L, and $q$ to to denote the probability that the playr 1's type is 2 after seeing R. 
-
-+ These are player 1 and player 2's strategies.  
-
-+ This means player 2's strategy upon observing L, and this means player 2's strategy upon observing R. 
 
 ---
 class: middle
 
 step 0: Write out the possible strategies for player 1 (signal sender).
 
-???
-+ Let's start with this. Since we need to assume player 1's potential strategy at equilibirium in step 1, we want need to know the set of strategies for player 1. 
 
-+ We have two nodes that does not share the information set here. So, we need to specify player 1's strategies for type 1 and and type 2, respectively. 
 
 
 ---
@@ -201,14 +156,7 @@ Player 1's strategy:
 
 $$(s_1^{t_1}, s_1^{t_2}) \in \{\underbrace{(L, R), (R, L)}_\text{Separating strategies}, \underbrace{(L, L), (R, R)}_\text{Pooling strategies}\}$$
 
-???
-+ This is the set of strategies for  player 1.
 
-+ In other words, there are four possible pure strategy PBE, where two are for pooling equilibrium and the other two are for separating equilibrium. 
-
-+ Examing a separating equlibirium is easier than examining a pooling equilibirum. So, let's start with  a separating equilibrium. 
-
-+ After I explained the first separating equilibrium, I let you guys reactice for the second separating equilibrium. 
 
 ---
 class: middle
@@ -260,9 +208,7 @@ knitr::include_graphics("photos/I_3.png")
 
 **Conclusion**: There is no separating equilibrium as such. 
 
-???
-+ The next question is what is player 1's BR given player 2's BR. 
-+ For type 1, we compare player 1's payoff of 1 by playing L, and payoff of 0 obtained by playing R. Obviously, 
+ 
 
 ---
 class: middle
@@ -274,8 +220,6 @@ Let's practice. Find a pure strategy PBE for this case.
 knitr::include_graphics("photos/I_4.png")
 ``` 
 
-???
-+ You should get $\{R,L; U, U; p=0, q=1\}$
 
 ---
 
@@ -376,8 +320,7 @@ Let's practice. Find a pure strategy PBE for this case.
 knitr::include_graphics("photos/I_9.png")
 ``` 
 
-???
-+ You should get $\{R,R; D, U; p\ge1/3, q=0.5\}$
+
 
 ---
 

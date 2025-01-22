@@ -67,15 +67,7 @@ xaringanExtra::use_tachyons()
 + Job market signaling game (continuous strategies)
   + 2020 and 2019 Final
 
-???
-+ Let me explain what the problems in the final exam look like. 
-+ The main topics in this last half of the game theory class are static game of incomplete information and dynamic game of incomplete information.
 
-+ Today is the last recitation for game theory class. There are lots of problems that I want to 
-
-+ One thing that you might want to practice is that Dynamic Cournot duopoly. Like the problem you did in Problem 1 in Assignment 3. Suppose that, only firm 1 knows the true state of the market demand, and you might be asked whether firm 1 should reveal the market information to firm 2 or not. 
-+ Dynamic Cournot game involving separating and pooling strategies are complicated and bothersome. It takes lots of time and makes you mentally exhausted. 
-+ So I recommend that at least you take a look at similar problems before the exam. 
 
 ---
 class: middle
@@ -93,8 +85,7 @@ Suppose that player $i$ is a signal sender.
 ]
 
 
-???
-+ I remember that I was confused with this definition. 
+
 
 + What's is 
 
@@ -121,9 +112,7 @@ Two requirements to apply the Intuitive Criterion:
 (2) $a_i$ is equilibrium dominated for type $t_i$ but not not all types. 
 
 
-???
-+ I remember that I was confused with this definition. 
-+ What's is 
+
 
 ---
 class: middle
@@ -174,9 +163,7 @@ There is no off the equilibrium path.
 
 &rarr; The Intuitive Criterion will not impose any restrictions on Player B (signal receiver)'s belief &rarr; The intuitive Criterion 
 
-???
-+ Let's start with a separating equilibrium. Since, there is no equilibrium path, the intuitive criterion does not impose any restrictions on Player B's brief. 
-+ The separating equilibrium automatically satisfies the Intuitive Criterion. 
+
 
 ---
 class: middle
@@ -202,8 +189,7 @@ knitr::include_graphics("./photos/example2.png")
 &rarr; Player B must believe $q=P[t_1|R]=0$ &rarr; contradiction (because the pooling equilibrium says that $q= 3/7$) &rarr; Case (ii) equilibrium does not satisfy the Intuitive Criterion. 
 
 
-???
-+ If the game is played according to the equilibrium strategies, the information set following $R$ is off the equilibrium path. 
+
 
 
 ---
@@ -221,17 +207,6 @@ In the previous recitation, you found that the pure strategy PBE are (i) $\{R, L
 
 
 <span style="color:blue">b. Which of the perfect Bayesian equilibria from part (a) satisfy the Intuitive Criterion? Justify your answer.</span>
-
-
-???
-+ Are you guys familiar with this game of trees?
-+ Yes, this is the same problem from problem 4 of Assignment 4, and you guys already solved part (a). So, today we gonna do part (b). 
-
-
-
-+ I noticed that the exact same problem is on this week's assignment, but one thing that I want to highlight is that this is a very basic problem in solving dynamic game of incomplete information, so I want you to practice this kind of problem many times until you are able to smoothly solve it without any hesitation or confusion. 
-
-+ I listed similar problems somewhere in this slide deck. So, please practice them. Okay?
 
 ---
 
@@ -341,10 +316,7 @@ For type $L$, it must be that
  -->
 
 
-<!-- ???
-+ Next Thursday will be the final exam. 
-+ I will make sure to solve this week's assignment by Monday, so come to my office hours on Monday if you have any questions 
-+ Also, my office hour usually starts from 12pm but I'll be there from 11:30.  -->
+
 
 
 

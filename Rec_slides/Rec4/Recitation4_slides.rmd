@@ -1,7 +1,7 @@
 ---
 title: "APEC8003: Recitation 6"
-author: 
-  - "Shunkei Kakimoto" 
+author:
+  - "Shunkei Kakimoto"
 header-includes:
    - \usepackage{mathtools}
    - \usepackage{color}
@@ -9,7 +9,7 @@ header-includes:
 output:
   xaringan::moon_reader:
     self_contained: true
-    css: ../xaringan-themer.css 
+    css: ../xaringan-themer.css
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -48,18 +48,16 @@ xaringanExtra::use_tachyons()
 
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=796px></html>
 
-???
-+ Today, we gonna review problem 3 from the midterm exam. 
-+ Recently, I have been going over time, so I'll try to finish before 3:50. 
+
 
 ---
 class: middle
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
 <b>Problem:</b>
 + Players: Monocorp (monopoly) and Rocky (monopsony)
-+ Rocky's utility (measured in monetary terms) is 
++ Rocky's utility (measured in monetary terms) is
 \begin{align*}
-U(H) = 
+U(H) =
     \begin{cases}
     10H - H^2/2  \quad & \text{ if } \, 0 \leq H \leq 10 \\
     0 &\text{ otherwise}
@@ -67,7 +65,7 @@ U(H) =
 \end{align*}
 + Inverse demand function: $P(H) = 10 - H$
 + Monocorp's cost function: $C = 30$ (zero marginal cost)
-] 
+]
 
 (a) Find the profit maximizing (linear) price per hour assuming that cable
 television is provided to Frostbite Falls. How much profit would
@@ -75,13 +73,8 @@ Monocorp make if it provided cable television to Frostbite Falls? Would
 Monocorp choose to supply cable television to Frostbite Falls?
 
 .content-box-red[**Profit maximization problem for Monocorp (monopoly)**]
-$$\max_{H} \pi =(10-H)H-30.$$ 
-Then, $H^{\ast}=5$.  Monocorp's profit is $\pi^{\ast}=-5<0$. So, Monocorp would rather choose not to provide cable TV. 
-
-???
-+ Okay, summarizing problem 3, there are two players, Monocorp and Rochy. This is the Rocky's utility function and this is the inverse demand function. 
-
-+ The question a is easy. We just need to solve for profit maximization problem for Monocorp. The profit is negative so, Monocorp would not provide TV. 
+$$\max_{H} \pi =(10-H)H-30.$$
+Then, $H^{\ast}=5$.  Monocorp's profit is $\pi^{\ast}=-5<0$. So, Monocorp would rather choose not to provide cable TV.
 
 ---
 class: middle
@@ -89,9 +82,9 @@ class: middle
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
 <b>Problem:</b>
 + Players: Monocorp (monopoly) and Rocky (monopsony)
-+ Rocky's utility (measured in monetary terms) is 
++ Rocky's utility (measured in monetary terms) is
 \begin{align*}
-U(H) = 
+U(H) =
     \begin{cases}
     10H - H^2/2  \quad & \text{ if } \, 0 \leq H \leq 10 \\
     0 &\text{ otherwise}
@@ -99,7 +92,7 @@ U(H) =
 \end{align*}
 + Inverse demand function: $P(H) = 10 - H$
 + Monocorp's cost function: $C = 30$ (zero marginal cost)
-] 
+]
 
 (b) Suppose instead of choosing a simple linear price, Monocorp sets a two-part
 tariff: $T(H) =A+ PH$. Solve for the profit maximizing two-part
@@ -114,51 +107,39 @@ television? Would Monocorp choose to supply cable television?
 \textrm{s.t.} \quad & A + PH \leq \int_{0}^{H} (10-h) dh
 \end{aligned}
 
-???
-+ Question (b) is asking about two-part tariff problme for Monocorop. As we did in the last recilation, the standard approach for the this problme is to solve for the profit maximization with the constraint that the monopoly's revenew is less than the potential consumer surplus. 
+
 
 ---
 class: middle
 
-.content-box-red[**Two-part tariff: Visual solution for intuitive understanding**]
+.content-box-red[**Two-part tariff: Visual solution for intuitive **understanding****]
 
 ```{r  echo = F, out.width = "60%"}
 knitr::include_graphics("photos/q3b.png")
 ```
 
-+ The monopoly sets per-unit fee $P$ at the competitive price $(\text{i.e., }P=MC=0)$ 
++ The monopoly sets per-unit fee $P$ at the competitive price $(\text{i.e., }P=MC=0)$
 
-&rarr; $CS$ is maximized. 
+&rarr; $CS$ is maximized.
 
 + Then, the monopoly extracts all the $CS$ by setting the lump-sum fee $A$ equal to $CS$.
 
 <br>
 
 .content-box-green[**What's the consequence for Rocky?**]
-+ <span style="color:blue">Since CS is zero, this means Rocky is indifferent between watching cable TV and not. 
++ <span style="color:blue">Since CS is zero, this means Rocky is indifferent between watching cable TV and not.
 </span>
 
-???
-+ Just like I showed in the last recitation, you can intuitively understand the mechanism of the two-part tarrif wit this figure. 
 
-+ First, the monopoly sets price at the competitive price. In this case, the marginal cost is zero, so the competitive price is zero. This results in maximized CS. 
-
-+ Then, the monopoly extract all the consumer surplus by setting the lump-sum fee A equals to CS. 
-
-+ This pricing scheme results in positive profit for Monocorp. 
-
-
-+ Consumer surplus is the difference between willingness to pay for a good and the price that consumers actually pay for it. Each price along a demand curve also represents a consumer's marginal benefit of each unit of consumption. The difference between a consumer's marginal benefit for a unit of consumption, and what they actually pay, represents how much benefit a consumer gets from the price they are paying
-  + **Note:**: Marginal benefit is the maximum amount a consumer will pay for one additional good or service
 ---
 class: middle
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
 <b>Problem:</b>
 + Players: Monocorp (monopoly) and Rocky (monopsony)
-+ Rocky's utility (measured in monetary terms) is 
++ Rocky's utility (measured in monetary terms) is
 \begin{align*}
-U(H) = 
+U(H) =
     \begin{cases}
     10H - H^2/2  \quad & \text{ if } \, 0 \leq H \leq 10 \\
     0 &\text{ otherwise}
@@ -166,7 +147,7 @@ U(H) =
 \end{align*}
 + Inverse demand function: $P(H) = 10 - H$
 + Monocorp's cost function: $C = 30$ (zero marginal cost)
-] 
+]
 
 (c) Suppose that Rocky offers to pay Monocorp a fixed amount, B, that allows
 Rocky to watch as much cable television as Rocky wants. How much
@@ -182,11 +163,7 @@ $$\begin{equation*}\begin{aligned}
 
 &rarr; $H=10$ and $B=30$, $U=10\cdot10 - 10^2/2 - 30 = 20$.
 
-???
-+ Question (c) is asking about how much TV Rocky would watch to maximize his utility. 
-+ So, we set up utility maximization problme in a usual way. 
-+ Since Rocky needs to pay for some fixed fee, we need to substract $B$ from Rocky's utility. 
-+ Also, we need a condition that Rocky has to at least pay the fixed cost that Monocorp incures. This assures that Monocorp provides their service and Rocky can get positive benefit from the service. 
+
 
 ---
 class: middle
@@ -194,9 +171,9 @@ class: middle
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-2.ph2.mt2[
 <b>Problem:</b>
 + Players: Monocorp (monopoly) and Rocky (monopsony)
-+ Rocky's utility (measured in monetary terms) is 
++ Rocky's utility (measured in monetary terms) is
 \begin{align*}
-U(H) = 
+U(H) =
     \begin{cases}
     10H - H^2/2  \quad & \text{ if } \, 0 \leq H \leq 10 \\
     0 &\text{ otherwise}
@@ -204,7 +181,7 @@ U(H) =
 \end{align*}
 + Inverse demand function: $P(H) = 10 - H$
 + Monocorp's cost function: $C = 30$ (zero marginal cost)
-] 
+]
 
 (d) Monocorp and Rocky engage in a bargaining game. They both agree to
 bargain on the size of a fixed payment from Rocky to Monocorp that lets
@@ -216,8 +193,7 @@ next period Monocorp makes an offer. If Rocky rejects this offer, both
 players get a payoff of $0$. The discount factor between periods is $\delta = 0.5$. Solve for the subgame perfect Nash equilibrium for this bargaining game.
 
 
-???
-+ Okay, question (d). This is the main question for this problem. This is a three stage bargaining game. First, Monocorp offer the fixed fee, and Rocky decises wherther to accept or reject the offer. If Rocky rejects the offer, then Rocky offers the fixed fee, and Monocorp chooses wherther to accept or not. If Monocorp rejects, in the final round, Monocorp offers and Rocky decides. If Rocky does not like Monocorp's final offer, then both get payoff of zero. 
+
 
 ---
 class: middle
@@ -241,7 +217,7 @@ Rocky watches TV for $H=10$ (by question (c)).
 
 <br>
 
-Using backward induction, let's start from the 3rd period (final period). 
+Using backward induction, let's start from the 3rd period (final period).
 
 ]
 
@@ -254,10 +230,10 @@ class: middle
 
 .content-box-green[(1) Ricky's best response to Rocky's offer B]
 
-Ricky compares the payoffs from accepting $(\Pi_M(B))$ and rejecting $(0)$. 
+Ricky compares the payoffs from accepting $(\Pi_M(B))$ and rejecting $(0)$.
 
 \begin{align*}
-br_R(B_1) = 
+br_R(B_1) =
     \begin{cases}
     \text{accept} \quad & \text{ if } \, B_1 < 50 \\
     \text{indifferent between accepting and rejecting} \quad & \text{ if } \, B_1=50 \\
@@ -274,7 +250,7 @@ br_R(B_1) =
 
 <br>
 
-<span style="color:blue">The NE for 3rd period</span>: Monocorp offers $B_1=50$ and Rocky accepts. 
+<span style="color:blue">The NE for 3rd period</span>: Monocorp offers $B_1=50$ and Rocky accepts.
 + Monocorp's payoff: $\Pi_M(50) = 20$
 + Rocky's payoff: $\Pi_R =0$
 
@@ -290,21 +266,21 @@ knitr::include_graphics("photos/q3d_2.png")
 ---
 class: middle
 
-By the same way as we did in 3rd period, 
+By the same way as we did in 3rd period,
 
 .content-box-green[(1) Monocorp's best response to Rocky's offer B]
-+ accept if the payoff $\Pi_{M} (B_2)\ge 20\delta=10$, reject otherwise. 
++ accept if the payoff $\Pi_{M} (B_2)\ge 20\delta=10$, reject otherwise.
 
 <br>
 
 .content-box-green[(2) Rocky's best response to Monocorp's strategy]
-+ Offer $B_2$ such that making Monocorp indifferent. 
++ Offer $B_2$ such that making Monocorp indifferent.
 
 $\Pi_{M}(B_2) = 10$ &rarr; $B_2 - 30 = 10$ &rarr; $B_2=40$
 
 <br>
 
-<span style="color:blue">The NE for 2nd period</span>: Rocky offers $B_2=40$ and Monocorp accepts. 
+<span style="color:blue">The NE for 2nd period</span>: Rocky offers $B_2=40$ and Monocorp accepts.
 + $\Pi_M = 10$ and $\Pi_R(40) = 50- 40  = 10$
 
 ---
@@ -320,17 +296,17 @@ knitr::include_graphics("photos/q3d_3.png")
 class: middle
 
 .content-box-green[(1) Rocky's best response to Rocky's offer B]
-+ accept if the payoff $\Pi_{M} (B_1)\ge 10\delta=5$, reject otherwise. 
++ accept if the payoff $\Pi_{M} (B_1)\ge 10\delta=5$, reject otherwise.
 
 <br>
 
 .content-box-green[(2) Monocorp's best response to Rocky's strategy]
-+ Offer $B_1$ such that making Rocky indifferent. 
++ Offer $B_1$ such that making Rocky indifferent.
 
 $\Pi_{R}(B_1) = 5$ &rarr; $40 - B_1 = 5$ &rarr; $B_1=45$
 
 
-<span style="color:blue">The NE for 2nd period</span>: Rocky offers $B_1=45$ and Rocky accepts. 
+<span style="color:blue">The NE for 2nd period</span>: Rocky offers $B_1=45$ and Rocky accepts.
 + $\Pi_M(45) = 45-30=15$ and $\Pi_R = 5$
 
 
@@ -345,7 +321,7 @@ knitr::include_graphics("photos/q3d_4.png")
 ---
 class: middle
 
-SPNE is: 
+SPNE is:
 + Period 1:Monocorp offers 45 and Rocky accepts.
 + Period 2:Rocky offers 40 and Monocorp accepts.
 + Period 3:Monocorp offers 50 and Rocky accepts.

@@ -57,11 +57,7 @@ Players  move sequentially or repeatedly.
 Definition: A set of strategies is a subgame Nash equilibrium if it is a Nash equilibirium in all subgames.
 ]
 
-???
-+ Okay, last week, we covered dynamic game. 
-+ What is a dynamic game? Well, it is a game such tht players move sequentially or repeatedly. 
-+ We can find NE, but not all the predictions of NE is credible. Some NE are non credible threats. 
-+ So, as a refinment of conventinal NE, we use new equilibirumm concept called subgame Nash equilibrium. Okay?
+
 
 ---
 class: middle
@@ -84,16 +80,7 @@ Consider the extensive form game in Figure 1.  The first payoff in parentheses i
 knitr::include_graphics("photos/pr1.png")
 ```
 
-???
-+ ???
-+ I solved problems in midterm and final exams many times in preparing for the prelim, and actually it helped me a lot.
-+ The problems I brought today are one of my favorite problems from the past exams, actually when you start to solve past prelim exams, you will see similar problems.  
 
-+ I like this problem because you can practice both static and dynamic game of complete information at the same time. 
-  + As you can see from this game tree, this part is dynamic game, but this part is static game. Interesting!
-+ Also, the similar game looks like this has been on prelim multiple times.  
-
-+ The main thing that I want to make sure you know is how to write down a set of strategies for each player in a dynamic game. 
 
 ---
 class: middle
@@ -108,6 +95,5 @@ Three firms compete as Cournot oligopolists. Let $q_i$ be the quantity produced 
 
 (c). Suppose the three firms compete in an infinitely repeated game. Suppose that $\delta$ is the discount factor between each stage of the repeated game. For what values of $\delta$ is it possible to support the collusive outcome as a subgame perfect Nash equilibrium of the infinitely repeated game?
 
-???
-+ For part (c), such a strategy is called "trigger strategy".
+
 

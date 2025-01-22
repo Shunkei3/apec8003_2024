@@ -63,19 +63,7 @@ class: middle -->
   * Friday 2 - 2:50 pm (need to be changed)
   * Or feel free to shoot me an email to set up a time for a meeting (Zoom or in person)
 
-???
-+ Alright, let's get started. 
-+ My name is Shunkei Kakimoto, I am a TA for next two Micro courses, Game theory and Welfare Economics. 
-+ I know you guys and you know me, so please don't hesitate reach out to me. I am happy to help with whatever I can.  
-+ Feel free to ask questions to me via email or in-person or whatever. 
 
-+ About assignment, there are five assignments in total through this course, and please submit your assignment on Canvas by Tuesday 3 pm. 
-
-+ I plan my office hours at 2-2:50 on Thursday and Friday at Waite Library, but I found that my office hours on Friday overlap with the econometric recitation class (?).
-
-+ To which date and time I should move my Friday office hour?
-  + Steve, Monday 4-5pm, Wed 12-1pm
-  + Monday 12 - 1 pm? Tuesday 2 - 3 pm (before Tuesday class), or Friday 1 - 2 pm? 
 
 ---
 class: middle
@@ -86,10 +74,7 @@ class: middle
 2. Exercise problem 1 (20 mins)
 3. Exercise problem 2 (20 mins)
 
-???
-+ This is the outline for today's session. 
-+ In this week's assignment, There are questions related to Dominant strategy equilibrium and Iterated strict dominance, which we didn't cover in this week lectures'. So, I'm gonna explain about these concepts. 
-+ And, I prepared some exercise problems, which might be helpful for this week's assignment. So, let's do it. 
+
 
 ---
 
@@ -106,9 +91,7 @@ At an equilibrium, each player's strategy is a best response to the others (or n
 
 Other than Nash equilibrium, there is another type of equilibrium called **dominant strategy equilibrium**, which could be used to make fairly compelling predictions about games. 
 
-???
-+ We learned about NE. NE is great in that it is widely applicable and used to make predictions about games. 
-+ But there is another way of making predictions about the game with another equilibrium concept, called dominant strategy equilibrium. 
+
 
 ---
 class: middle
@@ -126,9 +109,7 @@ class: middle
 (ii) $s_i$ **strictly dominates** $t_i$ if $U_i(s_i, s_{\sim i})\color{red}{>} U_i(t_i, s_{\sim i})$ for all $s_{\sim i} \in S_{\sim i}$.
 ]
 
-???
-+ Here are the definitions of dominant strategies. 
-+ Suppose that $s_i$ and $t_i$ are the elements of individual $i$'s strategies. We say $s_i$ weakly dominates $t_i$ for player $i$, if, no matter what any other players do, playing $s_i$ gives at least as high payoff as playing $t_i$ for player $i$. 
+
 
 ---
 class: middle
@@ -155,9 +136,7 @@ class: middle
 $s \in S$ is a (weekly/strictly) **dominant strategy equilibrium** if for all $i \in N$, and all $t_i \in S_i$, $s_i$ (weekly/strictly) dominates $t_i$. 
 ]
 
-???
 
-+ With these definitions, dominant strategy equilibrium are are defined such that if weakly or strictly dominant strategy $s_i$ exists for each player, then players, fo course, their dominant strategy. Then, the equilibrium is called dominant strategy equilibrium.
 
 ---
 class: middle
@@ -172,12 +151,7 @@ knitr::include_graphics("photos/photo1.png")
 
 Is there any (weekly/strictly) dominant strategy for each player? Can you find a dominant equilibrium?
 
-???
-+ Let's see these concepts with an example of Prisoner's Dilemma.
-+ Can you find a dominant strategy for each player? Let's do this together. Can you fid 
-+ Let's start with player 1. When player 2 plays "Cooperate",  Player 1 should play defect. When player 2 plays "Defect", Player 1 should plays Defect. Therefore, "Defect" is the strictly dominant strategy for player 1. 
-+ In the same way, we can see that "Defect" is the strictly dominant strategy for player 2. 
-+ Therefore, (Defect, Defect) is a strictly dominant strategy equilibrium. 
+
 
 ---
 class: middle
@@ -193,18 +167,7 @@ class: middle
 
 In many games, however, one or more players do not have dominant strategies. In that case, we cannot derive an equilibrium using the dominant strategies approach...
 
-???
-+ What's the difference between Nash equilibrium and dominant strategy equilibrium?
-+ The major difference is that while Nash equilibrium requires for each player to figure out what the opponent's optimal strategy is, the opponent's optimal strategy does not matter for dominant strategy equilibrium. 
-+ For dominant strategy, each players only cares about their payoffs, and plays the best strategy that gives higher payoff no matter how the opponent plays. 
 
-+ The weak point of dominant strategies approach is that if both players do not have dominant strategies, we cannot derive an equilibrium.
-
-+ But there is a solution concept to solve the game using the information about strictly dominated strategy, which is called There is a process called iterated strict dominance. 
-
-
-+ All dominant strategy equilibria are Nash equilibria, the reverse is not true.
-  + This is intuitive as some games cannot be solved with dominant strategies approach.  
 
 ---
 class: middle
@@ -222,21 +185,6 @@ In other words, <span style="color:blue">no rational player should ever play a s
 .content-box-green[**Procedure**]
 
 Repeat to eliminate strictly dominated strategies. 
-
-???
-+ Iterated strict dominance can be regarded as **a refinement of the dominant strategies approach** which we saw in the previous slides. 
-
-+ The idea behind this concept is that a rational player always plays the dominant strategy (if it exists) no matter what the opponents might do. 
-+ In other words, no rational player should play a strictly dominated strategy. Right? Pretty intuitive. 
-+ Don't get confused with strictly dominant strategy and strictly dominated strategy. 
-  + Say, if A is strictly dominant strategy, that means strategy A is the best strategy that gives higher payoff than playing any other strategies, no matter how the opponent plays.
-  + Meanwhile, if A is strictly dominated, that means some other strategy exists, say B, that strictly dominates A. 
-
-
-+ Making use of this idea, iterated strict dominance let us predict the outcome of a game. 
-+ The procedure is pretty simple. All we need to do is to repeat to find a eliminated strictly and to eliminate such a strategy. The survived pair of the strategy is the outcome. 
-
-+ Let's see an example.
 
 ---
 class: middle
@@ -274,8 +222,7 @@ knitr::include_graphics("photos/photo2_1.png")
 
 <span style="color:blue">Yes!</span>
 
-???
-+ There are no strictly dominant strategies in this game. 
+ 
 
 ---
 class: middle
@@ -294,10 +241,8 @@ No matter what Player 1 may play, Player 2 always gets a higher payoff from Play
 
 &rarr; If player 1 knows that player 2 is rational then player 1 can eliminate the possibility that player 2 plays C. 
 
-???
-+ This slide summarizes what I've just said. 
-+ Since C is strictly dominated by R for palyer 2, a rational player 2 will not play C. 
-+ From the standpoint of player 1, if player 1 knows that player 2 is rational, then player 1 will eliminate the possibility that player 2 will not play C. 
+
+
 
 ---
 class: middle
@@ -312,9 +257,7 @@ knitr::include_graphics("photos/photo2_2.png")
 
 Is there any strictly dominated strategy?
 
-???
-+ After eliminated player 2's strategy $C$, now the game looks like this. 
-+ Can we eliminate other strategies for player 1 or 2 in the same way?
+
 
 ---
 class: middle
@@ -329,9 +272,7 @@ No matter what player 2 plays, player 1 gets a higher payoff from playing U than
 
 &rarr; If player 2 knows that player 1 is rational then player 2 can eliminate the possibility that player 1 plays M or D. 
 
-???
-+ No strictly dominated strategies for player 2. 
-+ But, for player 1, M and D are strictly dominated by U. 
+
 
 ---
 class: middle
@@ -357,8 +298,7 @@ class: middle
 
 If there are no strictly dominated strategies to be eliminated (i.e. all the strategies in the game survive), iterated strict dominance fails to yield a prediction. 
 
-???
-+ Of course, there is a limitation when using iterated strict dominance. That is, if there are no strictly dominated strategies to be eliminated (i.e. all the strategies in the game survive), iterated strict dominance fails to yield a prediction. 
+
 
 ---
 class: middle
@@ -370,8 +310,7 @@ Gibbsons P.7-8
 > Nash equilibrium is a stronger solution concept than iterated elimination of strictly dominated strategies, in the sense that the player' strategies in a Nash equilibrium always survive iterated elimination of strictly dominated strategies, but the converse is not true. 
 
 
-???
-+ That's it for dominant strategy and iterated strict dominance. I hope this will be helpful for the assignment. 
+
 
 ---
 class: middle
@@ -386,11 +325,6 @@ Bob and Ray are driving in opposite directions down a road that narrows down to 
 
 (3) Find **all** Nash equilibria for this game. 
 
-???
-+ There are three points to understand the game , which are (i) the players in the game, (ii) strategy available to each player, and (iii) the payoffs received by each player.
-  + the normal-form representation of a game summaries these points. 
-  + normal-form representation can be mainly used for static game, but it can be also used for sequential-move games (but in that case, the extensive-form representation of the game is more convenient framework for analyzing dynamic issues.)
-+ Once you understand the game, the rest of the process is mechanical (always the same pattern).
 ---
 class: middle
 

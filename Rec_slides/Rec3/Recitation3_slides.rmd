@@ -60,11 +60,7 @@ xaringanExtra::use_tachyons()
 + Infinitely repeated games: trigger strategy
 + Tariffs and imperfect international competition
 
-???
-+ Sometimes, stepping back and looking at the big picture of what we've learned so far can be helpful for you to improve your understanding.
 
-+ This is a list of topics of the assignment problems that we have done. 
-+ If you feel like you don't have **confidence in** some of these topics, I recommend that you go back and think about why you don't understand at first, and review the correspoding part in the lecture note, solve the problem again.  
 
 ---
 class: middle
@@ -83,12 +79,7 @@ The Mega-Meta Corporation is a monopolist in the production of game theory softw
 
 <div style="text-align: right"> (Continue to the next page) </div>
 
-???
-+ Okay, this is the problem that we gonna work on today. 
-+ Last year, we had three problems on the midterm, and this problem was the final problem. I remembered that I got a bit confused in last part of this problem. I think this is a good problem to practice dynamic game, so let's do it. 
-+ First, read the problem, and think about the first two questiones. 
-  + The first question is easy, it's just asking about the monopoly profit. 
-  + The second question is asking about Two-part tarrifs. 
+
 
 
 ---
